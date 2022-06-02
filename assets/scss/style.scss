@@ -1,13 +1,24 @@
-@use "presets" as *;
-@use "common";
-
-body {
-  background-color: $color-primary;
-  color: $color-accent;
+@font-face {
+  font-family: "Graphik LCG";
+  src: url( ../fonts/GraphikLCG-Regular.woff2) format("woff2"),
+    url( ../fonts/GraphikLCG-Regular.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
-div {
-  width: $ul;
-  padding-left: $gap;
-  padding-right: $gap;
+@font-face {
+  font-family: "Graphik LCG";
+  src: url( ../fonts/GraphikLCG-Semibold.woff2) format("woff2"),
+    url( ../fonts/GraphikLCG-Semibold.woff) format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+html {
+  font-size: 16px;
+}
+body {
+  font-family: "Graphik LCG",sans-serif;
+  font-size: 15px;
 }
