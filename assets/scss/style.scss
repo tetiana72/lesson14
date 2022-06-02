@@ -1,6 +1,10 @@
 @import "../../node_modules/normalize.css/normalize.scss";
 
+@import "presets/skins";
+@import "presets/variables";
+
 @import "common/fonts";
 @import "common/typography";
+@import "common/classes.scss";
 
-@import "../scss/sections/header";
+@import "sections/header";
