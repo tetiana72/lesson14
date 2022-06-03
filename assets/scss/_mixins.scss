@@ -1,0 +1,23 @@
+@mixin xl-min {
+  @media (min-width:$xl) {
+    @content;
+  }
+}
+
+@mixin xl-lg {
+  @media (max-width: $xl - 0.2px) and (min-height: $lg) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (max-width: $xl - 0.2px)  {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (max-width: $lg - 0.2px) {
+    @content;
+  }
+}

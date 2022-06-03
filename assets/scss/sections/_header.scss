@@ -1,18 +1,112 @@
 header {
   background-color: $color-white;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 .header-menu {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: $gap-lg;
+  padding-bottom: $gap-lg;
   display: flex;
   column-gap: 50px;
   align-items: center;
+  position: absolute;
+  top: 0;
+  left: 50px;
+  right: 50px;
+
+&::after {
+  content: "";
+  height: 1px;
+  background-color: $color-grey;
+  width: 100%;
+    position: absolute;
+  bottom: 0;
 }
-.header-navbar {
-  flex-grow: 1;
-  display: flex;
-  column-gap: 60px;
+  &__navbar {
+    flex-grow: 1;
+    display: flex;
+    column-gap: 60px;
+  }
+  &__actions {
+    display: flex;
+    gap: $gap-sm;
+    color: $color-white;
+  }
+  &__actions {
+    display: flex;
+    gap: $gap-sm;
+    color: $color-white;
+  }
+&__btn {
+  min-width: 120px;
+  font-weight: 600;
+    font-size: 16px;
 }
-.header-action {
+}
+
+.header-content {
+  display: grid;
+  row-gap: $gap;
+  grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
   
+  padding-top: 160px;
+  padding-bottom: 160px;
+
+  @include xl-min {
+    grid-template-columns: 580px 1fr;
+  }
+
+  @include xl {
+    grid-template-columns: 40% 1fr;
+  }
+  
+
+  &__title {
+    grid-area: ttl;
+    font-weight: 600;
+    font-size: 65px;
+    line-height: 1.08;
+    margin: 0;
+
+@include xl-min {
+  font-size: 65px;
+}
+@include xl-lg {
+  font-size: 50px;
+}
+@include lg {
+  font-size: 40px;
+}
+
+  }
+&__description {
+  grid-area: dsc;
+  font-size: 25px;
+  line-height: 1.4;
+  margin-bottom: $gap;
+  padding-right: 70px;
+}
+&__actions {
+  grid-area: act;
+  display: flex;
+  column-gap: $gap-sm;
+}
+&__btn {
+  min-width: 160px;
+  font-weight: 600;
+    font-size: 16px;
+}
+&__picture {
+  grid-area: img;
+  display: flex;
+  align-items: center;
+}
+&__image {
+  width: 100%;
+}
+&__notes {
+  grid-area: nts;
+}
 }
