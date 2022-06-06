@@ -69,8 +69,15 @@ function watchFiles() {
   watch(PATH.jsFiles, sync);
   // watch(PATH.cssFiles, sync);
 }
+function watchDevFiles() {
+  syncInit();
+  watch(PATH.scssFiles, series(scssDev));
+  watch(PATH.htmlFiles, sync);
+  watch(PATH.jsFiles, sync);
+}
 
 task('comb', series(comb));
 task('scss', series(scss));
 task('dev', series(scssDev));
 task('watch', watchFiles);
+task('watchDev', watchdevFiles);
