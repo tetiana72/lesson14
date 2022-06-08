@@ -1,12 +1,21 @@
-@import "../../node_modules/normalize.css/normalize";
+@use "../../node_modules/normalize.css/normalize";
 
-@import "presets/skins";
-@import "presets/variables";
+@use "mixins/mixins-media";
 
-@import "mixins";
+@use "common/fonts";
+@use "common/typography";
+@use "common/classes";
 
-@import "common/fonts";
-@import "common/typography";
-@import "common/classes.scss";
+@use "sections/header/header";
+@use "sections/header/header-menu";
+@use "sections/header/header-logo";
+@use "sections/header/header-navbar";
+@use "sections/header/header-actions";
+@use "sections/header/header-content";
 
-@import "sections/header";
+@use "sections/main/main";
+@use "sections/main/brands/brands";
+@use "sections/main/job/control";
+@use "sections/main/job/time";
+@use "sections/main/job/quality";
+@use "sections/main/job/work";

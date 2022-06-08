@@ -1,11 +1,10 @@
-$xxl: 1380px;
-$xl: 1280px;
+@use "sass:math";
+
+$ul: 1380px;
+$xl: 1200px;
 $lg: 992px;
 $md: 768px;
 $sm: 576px;
-
 $gap: 20px;
-$gap-sm: calc(#{$gap} / 2);
-$gap-lg: calc(#{$gap} * 1.5);
-
-$diff: 0.2px;
+$gap-sm: math.div($gap, 2);
+$gap-lg: $gap * 1.5;

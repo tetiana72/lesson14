@@ -1,0 +1,36 @@
+.container {
+ min-width: $xxl;
+  padding-left: $gap;
+  padding-right: $gap;
+  margin: 0 auto;
+}
+.btn {
+  display: block;
+  padding: 0.5em 1em;
+  border-radius: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+.btn--light {
+  border-color: rgba($color-black, 0.5);
+  background-color: $color-white;
+}
+.btn--accent {
+  color: $color-white;
+  border-color: $color-accent;
+  background-color: $color-accent;
+}
+.dtn--sm {
+  @include lg-min {
+    min-width: 120px;
+    min-height: 45px;
+  }
+  @include lg {
+    min-width: 100px;
+    min-height: 40px;
+  }
+}
+.dtn--md {
+  min-width: 160px;
+    min-height: 45px;
+}

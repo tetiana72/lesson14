@@ -1,0 +1,107 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-navbar {
+  &__btn {
+    position: relative;
+
+    width: 30px;
+    height: 22.5px;
+    margin: 0 auto;
+
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    transform: rotate(0deg);
+
+    @include lg-min {
+      display: none;
+    }
+
+    &-row {
+      position: absolute;
+      left: 0;
+
+      display: block;
+
+      width: 100%;
+      height: 3px;
+
+      transition: 0.25s ease-in-out;
+      transform: rotate(0deg);
+
+      opacity: 1;
+      border-radius: 3px;
+      background: $color-accent;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+      }
+    }
+
+    &.active span {
+      &:nth-child(1) {
+        top: 9px;
+
+        transform: rotate(135deg);
+      }
+
+      &:nth-child(2) {
+        left: -30px;
+
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 9px;
+
+        transform: rotate(-135deg);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+
+    column-gap: $gap;
+    @include unlist;
+    @include lg {
+      position: absolute;
+      top: 100%;
+      right: -$gap;
+      left: -$gap;
+
+      display: none;
+      flex-grow: 1;
+
+      padding-top: $gap-sm;
+      padding-bottom: $gap-sm;
+
+      text-align: center;
+
+      background-color: rgba($color-white, 0.98);
+      box-shadow: 0 5px 5px rgba($color-black, 0.25);
+    }
+  }
+
+  &__link {
+    display: block;
+
+    @include xl-min {
+      padding: 0.5em $gap;
+    }
+    @include xl-lg {
+      padding: 0.5em 0.25em;
+    }
+    @include lg {
+      padding: 0.75em;
+    }
+  }
+}

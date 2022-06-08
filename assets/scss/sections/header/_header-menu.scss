@@ -1,0 +1,62 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.header-menu {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  padding-top: $gap-lg;
+  padding-bottom: $gap-lg;
+
+  gap: $gap-lg;
+  @include md {
+    flex-direction: column;
+  }
+
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+
+    width: 100vw;
+    height: 1px;
+    margin-left: -50vw;
+
+    content: "";
+
+    background-color: $color-gray;
+  }
+
+  // "наружное" оформление блока
+  &__logo {
+    @include lg {
+      flex-basis: 10%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+
+  // "наружное" оформление блока
+  &__navbar {
+    flex-grow: 1;
+
+    @include lg {
+      flex-basis: 10%;
+      flex-shrink: 0;
+    }
+    @include md {
+      order: 2;
+    }
+  }
+
+  // "наружное" оформление блока
+  &__actions {
+    @include lg {
+      flex-basis: 10%;
+      flex-grow: 1;
+      flex-shrink: 1;
+    }
+  }
+}

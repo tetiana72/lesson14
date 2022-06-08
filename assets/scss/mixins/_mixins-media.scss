@@ -1,4 +1,60 @@
-/*@use "../presets" as *;*/
+@use "../presets" as *;
+
+
+/* ul */
+@mixin ul-min {
+  @media (min-width: $ul) {
+    @content;
+  }
+}
+
+@mixin ul {
+  @media (max-width: ($ul - $diff)) {
+    @content;
+  }
+}
+
+@mixin ul-xl {
+  @media (max-width: ($ul - $diff)) and (min-width: $xl) {
+    @content;
+  }
+}
+
+@mixin ul-lg {
+  @media (max-width: ($ul - $diff)) and (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin ul-md {
+  @media (max-width: ($ul - $diff)) and (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin ul-sm {
+  @media (max-width: ($ul - $diff)) and (min-width: $sm) {
+    @content;
+  }
+}
+
+@mixin ul-xs {
+  @media (max-width: ($ul - $diff)) and (min-width: $xs) {
+    @content;
+  }
+}
+
+@mixin ul-xx {
+  @media (max-width: ($ul - $diff)) and (min-width: $xx) {
+    @content;
+  }
+}
+
+@mixin ul-ux {
+  @media (max-width: ($ul - $diff)) and (min-width: $ux) {
+    @content;
+  }
+}
 
 /* xl */
 @mixin xl-min {
