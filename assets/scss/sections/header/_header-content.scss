@@ -27,6 +27,7 @@
 
     grid-area: ttl;
     @include lg-sm {
+      
       padding-right: $gap * 3;
       padding-left: $gap * 3;
     }

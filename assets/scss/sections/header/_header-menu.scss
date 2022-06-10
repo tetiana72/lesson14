@@ -1,12 +1,13 @@
 @use "../../presets" as *;
 @use "../../mixins" as *;
+@use "../../presets/skins" as *;
 
 .header-menu {
   position: relative;
 
   display: flex;
   align-items: center;
-
+  
   padding-top: $gap-lg;
   padding-bottom: $gap-lg;
 
@@ -26,7 +27,7 @@
 
     content: "";
 
-    background-color: $color-gray;
+    background-color: $color-grey;
   }
 
   // "наружное" оформление блока
@@ -40,6 +41,7 @@
 
   // "наружное" оформление блока
   &__navbar {
+
     flex-grow: 1;
 
     @include lg {
