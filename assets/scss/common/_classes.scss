@@ -2,7 +2,7 @@
 @use "../mixins" as *;
 
 .container {
- min-width: $ul;
+  max-width: $ul;
   padding-left: $gap;
   padding-right: $gap;
   margin: 0 auto;
@@ -17,11 +17,15 @@
 .btn--light {
   border-color: rgba($color-black, 0.5);
   background-color: $color-white;
+  font-weight: 600;
+  font-size: 16px;
 }
 .btn--accent {
   color: $color-white;
   border-color: $color-accent;
   background-color: $color-accent;
+  font-weight: 600;
+  font-size: 16px; 
 }
 .dtn--sm {
   @include lg-min {
@@ -35,5 +39,5 @@
 }
 .dtn--md {
   min-width: 160px;
-    min-height: 45px;
+  min-height: 45px;
 }

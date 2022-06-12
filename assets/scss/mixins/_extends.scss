@@ -4,7 +4,7 @@
 
 %job-article {
   margin-top: 100px;
-  margin-bottom: 125px;
+  margin-bottom: 250px;
   display: flex;
   gap: $gap;
 
@@ -13,10 +13,72 @@
   }
   @include lg {
     flex-direction: column;
+    margin-bottom: 175px;
   }
   @include lg-md {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 125px;
   }
+}
+%job-content {
+  flex-basis: 200px;
+  flex-grow: 1;
+
+  @include ul-min {
+    padding-right: 160px;
+  }
+  @include ul-xl {
+    padding-right: 60px;
+  }
+}
+
+%job-title {
+  margin: 0;
+
+  font-weight: 600;
+  line-height: 1.2;
+
+  @include xl-min {
+    font-size: 50px;
+  }
+  @include xl-lg {
+    font-size: 40px;
+  }
+  @include lg {
+    font-size: 30px;
+  }
+}
+
+%job-description {
+  font-size: 1.25rem;
+  line-height: 1.5;
+}
+
+%job-picture {
+  flex-basis: 200px;
+  flex-grow: 1;
+
+  background-color: $color-bg-light;
+
+  @include lg-min {
+    padding: 190px 95px;
+  }
+  @include lg {
+    padding: 50px;
+  }
+}
+
+%job-image {
+  width: 100%;
+
+  border-radius: 18px;
+  box-shadow: 0 0 10px rgba($color-black, 0.5);
+}
+
+%job-btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.5;
 }

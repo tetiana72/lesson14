@@ -5,9 +5,9 @@
   display: grid;
   align-content: center;
   flex-grow: 1;
-
   padding-top: $gap * 4;
   padding-bottom: $gap * 4;
+  row-gap: $gap;
 
   @include xl-min {
     grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
@@ -17,17 +17,15 @@
     grid-template-areas: "ttl img" "dsc img" "act img" "nts img";
     grid-template-columns: 50% 1fr;
   }
-  @include lg {
+  @include lg-xs {
     grid-template-areas: "ttl" "dsc" "img" "act" "nts";
   }
-  row-gap: $gap;
 
   &__title {
     margin: 0;
 
     grid-area: ttl;
     @include lg-sm {
-      
       padding-right: $gap * 3;
       padding-left: $gap * 3;
     }
@@ -36,7 +34,7 @@
   &__description {
     margin-bottom: $gap;
 
-    line-height: 1.40;
+    line-height: 1.4;
 
     grid-area: dsc;
     @include xl-min {

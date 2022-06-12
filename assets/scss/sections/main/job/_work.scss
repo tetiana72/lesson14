@@ -1,0 +1,37 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.work {
+  flex-direction: row-reverse;
+gap: 135px;
+
+  @extend %job-article;
+  
+  @include lg-xs {
+    gap: $gap;
+  }
+
+  &__content {
+    @extend %job-content;
+    }
+
+  &__title {
+    @extend %job-title;
+  }
+
+  &__description {
+    @extend %job-description;
+  }
+
+  &__picture {
+    @extend %job-picture;
+  }
+
+  &__image {
+    @extend %job-image;
+  }
+
+  &__btn {
+    @extend %job-btn;
+  }
+}

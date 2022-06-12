@@ -25,6 +25,7 @@
     display: grid;
     align-items: center;
     gap: ($gap * 2) $gap;
+
     @include xl-min {
       justify-content: space-between;
 

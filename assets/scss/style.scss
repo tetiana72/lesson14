@@ -13,9 +13,13 @@
 @use "sections/header/header-actions";
 @use "sections/header/header-content";
 
-/*@use "sections/main/main";*/
+@use "sections/main/main";
+
 @use "sections/main/brands/brands";
-/*@use "sections/main/job/control";
+
+@use "sections/main/job/control";
 @use "sections/main/job/time";
 @use "sections/main/job/quality";
-@use "sections/main/job/work";*/
+@use "sections/main/job/work";
+
+@use "sections/main/opportunities/opportunities.scss"
