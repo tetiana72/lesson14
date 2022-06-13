@@ -1,0 +1,42 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.autor {
+  background-color: $color-bg-light-blue;
+padding-top: 65px;
+padding-bottom: 105px;
+
+
+&__info {
+  padding: 0 40px;
+  display: grid;
+  grid-template-areas: "dsc pht" "nme pht" "brn pht" ; 
+
+}
+
+&__description {
+  margin: 0;
+  grid-area: dsc;
+font-size: 30px;
+line-height: 133%;
+padding-right: 60px;
+padding-bottom: 0;
+}
+
+&__name {
+  margin: 0;
+  grid-area: nme;
+  font-size: 15px;
+line-height: 167%;
+
+}
+
+&__brand {
+  margin: 0;
+  grid-area: brn;
+}
+
+&__photo {
+  grid-area: pht;
+}
+}

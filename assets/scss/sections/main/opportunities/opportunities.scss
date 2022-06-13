@@ -14,38 +14,43 @@
 
     @include xl-min {
       padding: 0 40px;
+      gap: 125px;
+    }
 
+    @include xl {
       gap: 110px;
     }
-    @include xl {
-      gap: $gap * 2;
-    }
+
     @include lg-min {
       grid-template-columns: repeat(3, 1fr);
     }
     @include lg-sm {
       grid-template-columns: repeat(2, 1fr);
+      gap: $gap * 2;
     }
   }
 
-.opportunity-item {
-  display: flex;
-  flex-direction: column;
+  .opportunity-item {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: $gap-lg;
 
-  text-align: center;
+    &__title {
+      margin: 0;
+      font-weight: 600;
+      font-size: 25px;
+      line-height: 140%;
+    }
 
-  gap: $gap-lg;
+    &__description {
+      margin: 0;
+      font-size: 18px;
+      line-height: 139%;
+    }
 
-  &__title {
-    margin: 0;
+    &__picture {
+      order: -1;
+    }
   }
-
-  &__description {
-    margin: 0;
-  }
-
-  &__picture {
-    order: -1;
-  }
-}
 }
