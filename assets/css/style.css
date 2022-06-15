@@ -763,7 +763,7 @@ h2 {
 .productivity .productivity-item__btn {
   font-size: 20px;
   line-height: 150%;
-  text-decoration: underline;
+  border-bottom: 1px solid #000;
   padding-top: 20px;
 }
 
@@ -772,37 +772,46 @@ h2 {
   padding-top: 65px;
   padding-bottom: 105px;
 }
-.autor__info {
+
+.autor-info {
   padding: 0 40px;
   display: grid;
-  grid-template-areas: "dsc pht" "nme pht" "brn pht";
+  grid-template-areas: "txt pht" "owr pht";
 }
-.autor__description {
+
+.autor-text {
+  grid-area: txt;
   margin: 0;
-  grid-area: dsc;
   font-size: 30px;
   line-height: 133%;
   padding-right: 60px;
-  padding-bottom: 0;
+  padding-bottom: 25px;
 }
-.autor__name {
+
+.owner {
+  grid-area: owr;
+}
+.owner__name {
   margin: 0;
   grid-area: nme;
   font-size: 15px;
   line-height: 167%;
 }
-.autor__brand {
+.owner__brand {
   margin: 0;
   grid-area: brn;
 }
-.autor__photo {
+
+.autor-photo {
   grid-area: pht;
 }
+
 @media (min-width: 576px) {
   .header-content__btn {
     min-width: 160px;
   }
 }
+
 @media (min-width: 992px) {
   .work, .quality, .time, .control {
     -webkit-box-align: center;
@@ -829,6 +838,7 @@ h2 {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 @media (min-width: 1200px) {
   .work__title, .quality__title, .time__title, .control__title {
     font-size: 50px;
@@ -870,16 +880,19 @@ h2 {
     gap: 60px;
   }
 }
+
 @media (min-width: 1380px) {
   .work__content, .quality__content, .time__content, .control__content {
     padding-right: 160px;
   }
 }
+
 @media (max-width: 1379.8px) and (min-width: 1200px) {
   .work__content, .quality__content, .time__content, .control__content {
     padding-right: 60px;
   }
 }
+
 @media (max-width: 1199.8px) {
   .header-content__description {
     font-size: 20px;
@@ -888,13 +901,19 @@ h2 {
     gap: 110px;
   }
 }
-@media (max-width: 1199.8px) and (min-width: 576px) {
+
+@media (max-width: 1199.8px) and (min-width: 0) {
   .productivity .productivity-item {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding-bottom: 100px;
+  }
+  .productivity .productivity-item__description {
+    padding-bottom: 0;
   }
 }
+
 @media (max-width: 1199.8px) and (min-width: 992px) {
   .work__title, .quality__title, .time__title, .control__title {
     font-size: 40px;
@@ -925,6 +944,7 @@ h2 {
     justify-items: center;
   }
 }
+
 @media (max-width: 991.8px) {
   .work, .quality, .time, .control {
     -webkit-box-orient: vertical;
@@ -1008,7 +1028,12 @@ h2 {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .autor-text {
+    font-size: 25px;
+    padding-bottom: 40px;
+  }
 }
+
 @media (max-width: 991.8px) and (min-width: 0) {
   .header-content {
     grid-template-areas: "ttl" "dsc" "img" "act" "nts";
@@ -1016,7 +1041,17 @@ h2 {
   .work {
     gap: 20px;
   }
+  .autor-info {
+    grid-template-areas: "txt" "pht" "owr";
+  }
+  .owner {
+    padding-bottom: 10px;
+  }
+  .autor-photo {
+    padding-bottom: 10px;
+  }
 }
+
 @media (max-width: 991.8px) and (min-width: 576px) {
   .header-content__title {
     padding-right: 60px;
@@ -1037,7 +1072,11 @@ h2 {
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
+  .productivity {
+    padding-bottom: 40px;
+  }
 }
+
 @media (max-width: 991.8px) and (min-width: 768px) {
   .work, .quality, .time, .control {
     width: 80%;
@@ -1049,6 +1088,7 @@ h2 {
     width: 50%;
   }
 }
+
 @media (max-width: 767.8px) {
   .header-menu {
     -webkit-box-orient: vertical;
@@ -1064,7 +1104,12 @@ h2 {
   .header-content__image {
     width: 70%;
   }
+  .autor-text {
+    font-size: 20px;
+    line-height: 150%;
+  }
 }
+
 @media (max-width: 575.8px) {
   .header-content__btn {
     min-width: 120px;

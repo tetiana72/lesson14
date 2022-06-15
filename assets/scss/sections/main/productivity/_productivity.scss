@@ -6,6 +6,10 @@
   padding-bottom: 180px;
   background-color: $color-white;
 
+  @include lg-sm {
+    padding-bottom: 40px;
+  }
+
   &__title {
     margin: 0 0 80px;
   }
@@ -24,8 +28,10 @@
     flex-direction: column;
     align-items: flex-start;
 
-    @include xl-sm {
+    @include xl-xs {
       align-items: center;
+      padding-bottom: 100px;
+      
     }
 
     &__title {
@@ -40,6 +46,10 @@
       line-height: 150%;
       margin: 0;
       padding-bottom: 25px;
+
+      @include xl-xs {
+        padding-bottom: 0;
+      }
     }
 
     &__picture {
@@ -53,7 +63,7 @@
     &__btn {
       font-size: 20px;
       line-height: 150%;
-      text-decoration: underline;
+      border-bottom: 1px solid #000;
       padding-top: 20px;
     }
   }
