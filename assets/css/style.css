@@ -806,6 +806,45 @@ h2 {
   grid-area: pht;
 }
 
+.presentation {
+  background-color: #dabc98;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.achievement {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 20px;
+}
+.achievement__description {
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 143%;
+  padding-left: 65px;
+}
+.achievement__users {
+  padding-right: 65px;
+  padding-left: 190px;
+}
+.achievement__capterra {
+  padding-right: 65px;
+}
+
+.achievement::after {
+  content: "";
+  border-right: 1px solid;
+  height: 178px;
+  position: absolute;
+  padding-right: 350px;
+}
+
 @media (min-width: 576px) {
   .header-content__btn {
     min-width: 160px;

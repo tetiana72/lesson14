@@ -1,0 +1,38 @@
+@use "../../../presets" as *;
+@use "../../../mixins" as *;
+
+.presentation {
+  background-color: $color-bg-light-accent;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.achievement {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px 0 20px;
+
+  &__description {
+    font-weight: 600;
+    font-size: 35px;
+    line-height: 143%;
+    padding-left: 65px;
+  }
+
+  &__users {
+    padding-right: 65px;
+    padding-left: 190px;
+  }
+
+  &__capterra {
+    padding-right: 65px;
+  }
+}
+.achievement::after {
+  content: "";
+  border-right: 1px solid;
+  height: 178px;
+  position: absolute;
+  padding-right: 350px;
+}
