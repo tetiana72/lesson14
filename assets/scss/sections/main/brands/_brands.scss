@@ -5,8 +5,8 @@
   background-color: $color-bg-accent;
 
   @include xl-min {
-    padding-top: 125px;
-    padding-bottom: 125px;
+    padding-top: 105px;
+    padding-bottom: 105px;
   }
   @include xl-lg {
     padding-top: 100px;
@@ -18,7 +18,17 @@
   }
 
   &__title {
-    margin: 0 0 40px;
+    margin: 0 0 70px;
+
+    @include ul-min {
+      padding: 0 350px 0 350px;
+    }
+    @include ul-lg {
+      padding: 0 200px 0 200px;
+    }
+    @include lg-md {
+      padding: 0 150px 0 150px;
+    }
   }
 
   &__list {

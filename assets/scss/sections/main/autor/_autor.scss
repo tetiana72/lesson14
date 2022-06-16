@@ -12,7 +12,7 @@
   grid-template-areas: "txt pht" "owr pht";
 
   @include lg-xs {
-    grid-template-areas: "txt" "pht" "owr";
+    grid-template-areas: "pht" "owr" "txt";
   }
 }
 .autor-text {
@@ -27,19 +27,19 @@
     font-size: 25px;
     padding-bottom: 40px;
   }
-    @include md {
-      font-size: 20px;
-      line-height: 150%;
-    }
+  @include md {
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.owner {
+  grid-area: owr;
+
+  @include lg-xs {
+    padding-bottom: 45px;
   }
 
-  .owner {
-    grid-area: owr;
-
-    @include lg-xs {
-      padding-bottom: 10px;
-    }
-  
   &__name {
     margin: 0;
     grid-area: nme;
@@ -56,5 +56,8 @@
 
   @include lg-xs {
     padding-bottom: 10px;
+  }
+  &__img {
+    width: 200px;
   }
 }

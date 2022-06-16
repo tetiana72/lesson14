@@ -15,10 +15,16 @@
   border-style: solid;
 }
 .btn--light {
-  border-color: rgba($color-black, 0.5);
-  background-color: $color-white;
+  border-color: rgba($color-white, 0.5);
+  background-color: $color-black;
   font-weight: 600;
   font-size: 16px;
+}
+.btn--black {
+  color: $color-white;
+  background-color: $color-black;
+  font-weight: 600;
+  font-size: 17px;
 }
 .btn--accent {
   color: $color-white;
@@ -40,4 +46,12 @@
 .dtn--md {
   min-width: 160px;
   min-height: 45px;
+}
+.btn--lg {
+  min-width: 160px;
+  min-height: 60px;
+}
+.btn--xl {
+  min-width: 190px;
+  min-height: 60px;
 }
