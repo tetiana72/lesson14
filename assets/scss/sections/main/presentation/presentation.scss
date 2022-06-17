@@ -16,6 +16,7 @@
   @include xl {
     flex-wrap: wrap;
     flex-direction: column;
+    padding: 0 20px 0 20px;
   }
 
   &__picture {
@@ -30,7 +31,7 @@
     padding-left: 65px;
 
     @include xl {
-      padding-bottom: 50px;
+      padding: 0 0 50px 0;
       text-align: center;
     }
   }
@@ -49,16 +50,10 @@
 
 .achievement::after {
   content: "";
-  border-right: 1px solid;
-  height: 178px;
-  position: absolute;
-  padding-right: 350px;
-
-  @include ul-xl {
-    padding-right: 335px;
-  }
-
-  @include xl {
-    display: none;
+  @include ul-min {
+    border-right: 1px solid;
+    height: 178px;
+    position: absolute;
+    padding-right: 350px;
   }
 }

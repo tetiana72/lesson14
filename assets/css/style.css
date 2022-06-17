@@ -865,10 +865,6 @@ h2 {
 
 .achievement::after {
   content: "";
-  border-right: 1px solid;
-  height: 178px;
-  position: absolute;
-  padding-right: 350px;
 }
 
 .integration {
@@ -876,30 +872,18 @@ h2 {
 }
 
 .integration-content {
-  padding-top: 165px;
-  padding-bottom: 165px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-.integration-content__title {
-  margin: 0;
-  padding: 0 250px 10px 250px;
-  font-size: 65px;
-  line-height: 115%;
-}
-.integration-content__description {
-  font-size: 25px;
-  line-height: 120%;
-  padding: 0 400px 25px 400px;
-  text-align: center;
+  padding-top: 165px;
+  padding-bottom: 165px;
 }
 .integration-content__picture {
   padding-bottom: 35px;
@@ -907,6 +891,33 @@ h2 {
 .integration-content__img {
   width: 100%;
 }
+
+.integration-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 800px;
+}
+.integration-text__title {
+  margin: 0;
+  font-size: 65px;
+  line-height: 115%;
+  padding-bottom: 10px;
+}
+.integration-text__description {
+  font-size: 25px;
+  line-height: 120%;
+  padding: 0 120px 25px 120px;
+  text-align: center;
+}
+
 .sentence {
   background-color: #ff9c7d;
   padding-top: 120px;
@@ -1015,13 +1026,16 @@ h2 {
   .brands__title {
     padding: 0 350px 0 350px;
   }
+  .achievement::after {
+    border-right: 1px solid;
+    height: 178px;
+    position: absolute;
+    padding-right: 350px;
+  }
 }
 @media (max-width: 1379.8px) and (min-width: 1200px) {
   .work__content, .quality__content, .time__content, .control__content {
     padding-right: 60px;
-  }
-  .achievement::after {
-    padding-right: 335px;
   }
 }
 @media (max-width: 1379.8px) and (min-width: 992px) {
@@ -1043,16 +1057,14 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding: 0 20px 0 20px;
   }
   .achievement__picture {
     padding-bottom: 30px;
   }
   .achievement__description {
-    padding-bottom: 50px;
+    padding: 0 0 50px 0;
     text-align: center;
-  }
-  .achievement::after {
-    display: none;
   }
 }
 @media (max-width: 1199.8px) and (min-width: 0) {
@@ -1094,12 +1106,6 @@ h2 {
     grid-template-columns: repeat(3, minmax(50px, -webkit-max-content));
     grid-template-columns: repeat(3, minmax(50px, max-content));
     justify-items: center;
-  }
-  .integration-content__title {
-    padding: 0 150px 10px 150px;
-  }
-  .integration-content__description {
-    padding: 0 250px 25px 250px;
   }
   .sentence-free__title {
     padding: 0 170px 30px 170px;
@@ -1234,9 +1240,6 @@ h2 {
   .productivity {
     padding-bottom: 40px;
   }
-  .integration-content__description {
-    padding: 0 100px 10px 100px;
-  }
   .integration-content__picture {
     width: 75%;
   }
@@ -1254,8 +1257,8 @@ h2 {
   .brands__title {
     padding: 0 150px 0 150px;
   }
-  .integration-content__title {
-    padding: 0 50px 10px 50px;
+  .integration-text__title {
+    padding-bottom: 20px;
     font-size: 50px;
     line-height: 100%;
   }
@@ -1285,16 +1288,15 @@ h2 {
   }
 }
 @media (max-width: 767.8px) and (min-width: 0) {
-  .integration-content {
-    padding: 100px 0 100px 0;
-  }
-  .integration-content__title {
-    padding: 0 20px 10px 20px;
-    font-size: 35px;
+  .integration-text__title {
+    font-size: 40px;
     line-height: 100%;
   }
 }
 @media (max-width: 767.8px) and (min-width: 576px) {
+  .integration-text__description {
+    padding: 0 50px 20px 50px;
+  }
   .sentence-free__title {
     padding: 0 70px 30px 70px;
     font-size: 40px;
@@ -1309,8 +1311,8 @@ h2 {
   }
 }
 @media (max-width: 575.8px) and (min-width: 0) {
-  .integration-content__description {
-    padding: 0 50px 10px 50px;
+  .integration-text__description {
+    padding: 0 40px 5px 40px;
     font-size: 20px;
   }
   .sentence-free__title {
