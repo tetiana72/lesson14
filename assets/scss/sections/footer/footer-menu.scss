@@ -1,0 +1,83 @@
+@use "../../presets" as *;
+@use "../../mixins" as *;
+
+.studies {
+  padding-left: 50px;
+  max-width: 380px;
+
+  &__title {
+    margin: 0;
+    padding-bottom: 30px;
+    font-size: 40px;
+    line-height: 125%;
+  }
+  &__img {
+    padding-bottom: 30px;
+  }
+  &__logo {
+    padding-bottom: 10px;
+  }
+  &__description {
+    font-size: 20px;
+    line-height: 150%;
+    padding-bottom: 15px;
+  }
+  &__link {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 150%;
+  }
+}
+
+.footer-menu {
+ 
+  grid-area: menu;
+  display: flex;
+    justify-content: space-between;
+  column-gap: 60px;
+  flex-wrap: wrap;
+  padding-bottom: $gap;
+
+ 
+  @include lg-min {
+    
+     column-gap: 50px;
+    justify-content: space-around;
+    }
+    @include md-min {
+      column-gap: 30px;
+      padding-bottom: $gap;
+    }
+    @include sm {
+      justify-content: space-around;
+    }
+
+}
+.popular-categories{
+
+
+  &__title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 125%;
+
+  @include md-min {
+    font-weight: 600;
+    font-size: 20px;
+  }
+}
+
+&__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 25px;
+
+  @include md-min {
+    font-size: 15px;
+  }
+
+}
+}
+
+
