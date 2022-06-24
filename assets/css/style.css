@@ -988,7 +988,8 @@ h2 {
           column-gap: 60px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding-bottom: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;
 }
 
 .popular-categories__title {
