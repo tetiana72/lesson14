@@ -524,13 +524,13 @@ h2 {
   gap: 30px;
 }
 .header-menu::after {
+  content: "";
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 100vw;
   height: 1px;
   margin-left: -50vw;
-  content: "";
   background-color: #cccccc;
 }
 .header-menu__navbar {
@@ -888,7 +888,7 @@ h2 {
 .integration-content__picture {
   padding-bottom: 35px;
 }
-.integration-content__img {
+.integration-content__picture__img {
   width: 100%;
 }
 
@@ -1050,14 +1050,9 @@ h2 {
 }
 
 .footer-main {
-  /* display: flex;
-   padding-top: 95px;
-   padding-bottom: 100px;
-   gap: 85px;
-   border-bottom: 1px solid #000;*/
   display: grid;
   grid-template-areas: "studies menu";
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #000000;
   padding-top: 95px;
   padding-bottom: 100px;
 }

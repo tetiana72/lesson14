@@ -24,7 +24,7 @@
   &__title {
     margin: 0;
     grid-area: ttl;
-    
+
     @include lg-sm {
       padding-right: $gap * 3;
       padding-left: $gap * 3;
@@ -65,7 +65,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
     grid-area: img;
   }
 
@@ -92,6 +91,7 @@
 
   &__notes {
     grid-area: nts;
+
     @include lg {
       text-align: center;
     }

@@ -31,7 +31,6 @@
     @include xl-xs {
       align-items: center;
       padding-bottom: 100px;
-      
     }
 
     &__title {
@@ -41,6 +40,7 @@
       margin: 0;
       padding-bottom: 35px;
     }
+
     &__description {
       font-size: 20px;
       line-height: 150%;
@@ -56,10 +56,12 @@
       order: -1;
       padding-bottom: 50px;
     }
+
     &__picture--dev {
       order: -1;
       padding-bottom: 75px;
     }
+
     &__btn {
       font-size: 20px;
       line-height: 150%;

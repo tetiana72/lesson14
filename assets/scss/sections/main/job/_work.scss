@@ -3,17 +3,17 @@
 
 .work {
   flex-direction: row-reverse;
-gap: 135px;
+  gap: 135px;
 
   @extend %job-article;
-  
+
   @include lg-xs {
     gap: $gap;
   }
 
   &__content {
     @extend %job-content;
-    }
+  }
 
   &__title {
     @extend %job-title;

@@ -21,19 +21,23 @@
       padding: 0 170px 30px 170px;
       font-size: 50px;
     }
+
     @include lg-md {
       padding: 0 100px 30px 100px;
       font-size: 50px;
     }
+
     @include md-sm {
       padding: 0 70px 30px 70px;
       font-size: 40px;
     }
+
     @include sm-xs {
       padding: 0 50px 30px 50px;
       font-size: 30px;
     }
   }
+
   &__description {
     padding-bottom: 55px;
     font-size: 20px;

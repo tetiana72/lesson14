@@ -7,12 +7,12 @@
 
   @extend %job-article;
 
-@include lg-sm {
-      gap: $gap;
-    }
+  @include lg-sm {
+    gap: $gap;
+  }
+  
   &__content {
     @extend %job-content;
-    
   }
 
   &__title {
