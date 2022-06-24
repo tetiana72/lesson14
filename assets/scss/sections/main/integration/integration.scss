@@ -13,12 +13,21 @@
   padding-bottom: 165px;
 
   &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding-bottom: 35px;
-    @include lg-sm {
-      width: 75%;
-    }
-    &__img {
+  }
+
+  &__img {
+    @include lg-min {
       width: 100%;
+    }
+    @include lg-sm {
+      width: 50%;
+    }
+    @include sm {
+      width: 40%;
     }
   }
 }

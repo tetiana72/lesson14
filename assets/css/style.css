@@ -363,7 +363,7 @@ template {
 }
 .work, .quality, .time, .control {
   margin-top: 100px;
-  margin-bottom: 250px;
+  margin-bottom: 125px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -886,10 +886,16 @@ h2 {
   padding-bottom: 165px;
 }
 .integration-content__picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding-bottom: 35px;
-}
-.integration-content__picture__img {
-  width: 100%;
 }
 
 .integration-text {
@@ -1122,6 +1128,9 @@ h2 {
   .opportunities__content {
     grid-template-columns: repeat(3, 1fr);
   }
+  .integration-content__img {
+    width: 100%;
+  }
   .footer-menu {
     -webkit-column-gap: 50px;
        -moz-column-gap: 50px;
@@ -1284,7 +1293,7 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 175px;
+    margin-bottom: 100px;
   }
   .work__title, .quality__title, .time__title, .control__title {
     font-size: 30px;
@@ -1400,6 +1409,9 @@ h2 {
     padding-right: 60px;
     padding-left: 60px;
   }
+  .header-content__image {
+    width: 50%;
+  }
   .brands__list {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
@@ -1418,8 +1430,8 @@ h2 {
   .productivity {
     padding-bottom: 40px;
   }
-  .integration-content__picture {
-    width: 75%;
+  .integration-content__img {
+    width: 50%;
   }
 }
 
@@ -1428,10 +1440,6 @@ h2 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 125px;
-  }
-  .header-content__image {
-    width: 50%;
   }
   .brands__title {
     padding: 0 150px 0 150px;
@@ -1459,9 +1467,6 @@ h2 {
         -ms-flex-order: 2;
             order: 2;
   }
-  .header-content__image {
-    width: 70%;
-  }
   .autor-text {
     font-size: 20px;
     line-height: 150%;
@@ -1486,11 +1491,17 @@ h2 {
 }
 
 @media (max-width: 575.8px) {
+  .header-content__image {
+    width: 40%;
+  }
   .header-content__btn {
     min-width: 120px;
   }
   .brands__list {
     justify-items: center;
+  }
+  .integration-content__img {
+    width: 40%;
   }
   .footer-menu {
     -ms-flex-pack: distribute;
