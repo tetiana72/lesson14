@@ -6,7 +6,11 @@
   padding-bottom: 180px;
   background-color: $color-white;
 
-  @include lg-sm {
+  @include xl-lg {
+    padding-bottom: 100px;
+  }
+
+  @include lg-xs {
     padding-bottom: 40px;
   }
 
@@ -27,10 +31,11 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    padding-bottom: 100px;
 
     @include xl-xs {
       align-items: center;
-      padding-bottom: 100px;
+      padding-bottom: 50px;
     }
 
     &__title {

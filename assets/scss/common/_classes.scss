@@ -13,12 +13,20 @@
   border-radius: 0;
   border-width: 1px;
   border-style: solid;
+
+  @include sm {
+    padding: 0.3em 0.5em;
+  }
 }
 .btn--light {
   border-color: rgba($color-black, 0.5);
   background-color: $color-white;
   font-weight: 600;
   font-size: 16px;
+
+  @include sm {
+    font-size: 14px;
+  }
 }
 .btn--black {
   color: $color-white;
@@ -31,21 +39,30 @@
   border-color: $color-accent;
   background-color: $color-accent;
   font-weight: 600;
-  font-size: 16px; 
-}
-.dtn--sm {
-  @include lg-min {
-    min-width: 120px;
-    min-height: 45px;
-  }
-  @include lg {
-    min-width: 100px;
-    min-height: 40px;
+  font-size: 16px;
+
+  @include sm {
+    font-size: 14px;
   }
 }
-.dtn--md {
+.btn--sm {
+  min-width: 120px;
+  min-height: 45px;
+
+  @include sm {
+    min-width: 90px;
+  min-height: 30px;
+
+  }
+}
+.btn--md {
   min-width: 160px;
   min-height: 45px;
+
+  @include sm {
+    min-width: 100px;
+    min-height: 30px;
+  }
 }
 .btn--lg {
   min-width: 160px;
