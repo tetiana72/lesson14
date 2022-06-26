@@ -8,12 +8,10 @@
 
   @include md-sm {
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
     gap: 25px;
   }
   @include sm-xs {
     grid-template-columns: repeat(1, 1fr);
-    justify-items: center;
     gap: $gap;
   }
 }

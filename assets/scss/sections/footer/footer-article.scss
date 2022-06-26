@@ -9,11 +9,8 @@
   max-width: 400px;
   padding-left: 50px;
 
-  @include xl-md {
+  @include md-sm {
     padding: 0;
-  }
-  @include md-xs {
-    padding-left: 50px;
   }
 
   &__title {
