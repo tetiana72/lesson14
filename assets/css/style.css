@@ -349,7 +349,7 @@ template {
 /* xs */
 @font-face {
   font-family: "Graphik LCG";
-  src: url(../GraphikLCG-Regular.woff2) format("woff2"), url(../fonts/GraphikLCG-Regular.woff) format("woff");
+  src: url(../fonts/GraphikLCG-Regular.woff2) format("woff2"), url(../fonts/GraphikLCG-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -992,7 +992,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-left: 50px;
   gap: 15px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1036,7 +1035,7 @@ h2 {
   border-bottom: 1px solid #000000;
   padding-top: 95px;
   padding-bottom: 100px;
-  gap: 100px;
+  gap: 65px;
 }
 
 .studies {
@@ -1052,7 +1051,6 @@ h2 {
       -ms-flex-align: start;
           align-items: flex-start;
   max-width: 400px;
-  padding-left: 50px;
 }
 .studies__title {
   margin: 0;
@@ -1443,6 +1441,7 @@ h2 {
   }
   .footer-main {
     padding-top: 50px;
+    padding-bottom: 50px;
     gap: 40px;
     justify-items: center;
   }
@@ -1458,9 +1457,6 @@ h2 {
   .footer-menu {
     grid-template-columns: repeat(2, 1fr);
     gap: 25px;
-  }
-  .studies {
-    padding: 0;
   }
 }
 @media (max-width: 575.8px) {
